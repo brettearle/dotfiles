@@ -1,0 +1,87 @@
+# -----------------------------------------
+# Dotfiles Gitignore (safe defaults)
+# -----------------------------------------
+
+# --- Zsh / Shell junk ---
+.zsh_history
+.zsh_sessions
+.zshrc.local           # machine-specific overrides
+.zprofile.local
+.zlogin.local
+
+# Oh My Zsh cache & temp
+.oh-my-zsh/custom/plugins/**/cache/
+.oh-my-zsh/cache/
+
+# Powerlevel10k generated cache
+.p10k.zsh.zwc
+
+# --- Neovim / Vim ---
+# Plugin managers / generated files
+.config/nvim/plugged/
+.config/nvim/lazy/
+.config/nvim/pack/
+.config/nvim/autoload/
+.config/nvim/.netrwhist
+.config/nvim/undodir/
+.config/nvim/swap/
+.config/nvim/backup/
+
+# Neovim LSP/log/cache
+.config/nvim/log/
+.config/nvim/.cache/
+
+# --- Tmux ---
+.tmux/resurrect/
+.tmux/continuum/
+.tmux/plugins/**/tmp/
+
+# --- Alacritty ---
+# Nothing usually needed here, but keep local-only overrides safe
+.config/alacritty/local.yml
+
+# --- Editors ---
+# JetBrains
+.idea/
+# VSCode
+.vscode/
+.vscode-server/
+
+# --- OS-specific junk ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# --- SSH / Secrets (never commit these!) ---
+.ssh/
+.gnupg/
+.aws/
+.azure/
+.kube/
+*.pem
+*.key
+*.crt
+*.token
+
+# --- Node / Python / Tools ---
+node_modules/
+dist/
+env/
+venv/
+__pycache__/
+*.pyc
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Backups ---
+*~
+*.bak
+*.tmp
+
+# --- Misc ---
+.cache/
+.local/
+
