@@ -1,4 +1,4 @@
-# Brett’s Dotfiles
+# Dotfiles
 
 A portable setup for:
 
