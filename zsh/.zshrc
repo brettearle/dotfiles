@@ -12,6 +12,9 @@ fi
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 alias air='$(go env GOPATH)/bin/air'
+export PATH=$HOME/.go/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
+export PATH=$PATH:/usr/local/go/bin
 
 # --- Deno ---
 export DENO_INSTALL="$HOME/.deno"
